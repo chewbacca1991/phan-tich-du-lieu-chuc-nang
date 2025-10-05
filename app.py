@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/api/data', methods=['GET'])
 def get_data():
     # Logic to fetch data
-    data = {'message': 'Data will be fetched from the database'}
+    data = {'message': 'Fetched data from the database successfully.'}
     return jsonify(data)
 
 if __name__ == '__main__':
