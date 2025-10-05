@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/api/data', methods=['GET'])
 def get_data():
-    # Logic để lấy dữ liệu
-    data = {'message': 'Dữ liệu sẽ được lấy từ cơ sở dữ liệu'}
+    # Logic to fetch data
+    data = {'message': 'Data will be fetched from the database'}
     return jsonify(data)
 
 if __name__ == '__main__':
