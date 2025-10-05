@@ -7,7 +7,7 @@ class DataVisualizer:
     def plot_data(self):
         plt.figure(figsize=(10, 5))
         plt.plot(self.data)
-        plt.title('Phân tích dữ liệu')  # Changed title for clarity
-        plt.xlabel('Thời gian')
-        plt.ylabel('Giá trị')
+        plt.title('Data Analysis')  # Changed title for clarity
+        plt.xlabel('Time')
+        plt.ylabel('Value')
         plt.show()
