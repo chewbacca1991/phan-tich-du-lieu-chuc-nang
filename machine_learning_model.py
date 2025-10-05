@@ -15,6 +15,8 @@ class MLModel:
         return self.model.score(X_test, y_test)
 
     def validate(self, new_data):
+        if 'target' not in new_data.columns:
+            raise ValueError("new_data must contain 'target' column.")
         X_new = new_data.drop('target', axis=1)
         y_new = new_data['target']
         return self.model.score(X_new, y_new)
