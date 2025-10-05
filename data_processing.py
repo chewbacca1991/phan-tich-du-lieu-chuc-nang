@@ -5,9 +5,9 @@ class DataProcessor:
         self.data_source = data_source
 
     def load_data(self):
-        # Logic để tải dữ liệu
+        # Logic to load data
         return pd.read_csv(self.data_source)
 
     def clean_data(self, df):
-        # Logic để làm sạch dữ liệu
+        # Logic to clean data
         return df.dropna()
