@@ -7,7 +7,7 @@ class DataVisualizer:
     def plot_data(self):
         plt.figure(figsize=(10, 5))
         plt.plot(self.data)
-        plt.title('Dữ liệu phân tích')
+        plt.title('Phân tích dữ liệu')  # Changed title for clarity
         plt.xlabel('Thời gian')
         plt.ylabel('Giá trị')
         plt.show()
