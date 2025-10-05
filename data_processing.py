@@ -9,5 +9,5 @@ class DataProcessor:
         return pd.read_csv(self.data_source)
 
     def clean_data(self, df):
-        """Clean the DataFrame by dropping rows with missing values."
+        """Clean the DataFrame by dropping rows with missing values."""
         return df.dropna()
