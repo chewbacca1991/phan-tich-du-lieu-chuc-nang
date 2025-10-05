@@ -5,9 +5,9 @@ class DataProcessor:
         self.data_source = data_source
 
     def load_data(self):
-        # Logic to load data
+        """Load data from the specified source."""
         return pd.read_csv(self.data_source)
 
     def clean_data(self, df):
-        # Logic to clean data
+        """Clean the DataFrame by dropping rows with missing values."
         return df.dropna()
